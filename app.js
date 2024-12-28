@@ -99,7 +99,7 @@ btn3.addEventListener('click', function () {
         document.getElementById(`current-${activePlayer}`).textContent = scores[activePlayer]
 
         //check if >=100
-        if (scores[activePlayer] >= 10) {
+        if (scores[activePlayer] >= 100) {
             //finish
             playing = false;
             document.querySelector(`.player-${activePlayer}-panel`).classList.add('winner')
