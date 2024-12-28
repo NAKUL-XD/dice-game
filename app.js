@@ -15,10 +15,10 @@ let playing = true;
 
 
 const init = function () {
-     playing = true;
-     scores = [0, 0];
-     currSc = 0;
-     activePlayer = 0;
+    playing = true;
+    scores = [0, 0];
+    currSc = 0;
+    activePlayer = 0;
 
 
     cur1sc.textContent = '0';
@@ -33,14 +33,14 @@ const init = function () {
     p1.classList.add('active')
     p2.classList.remove('active')
 
-    document.querySelector(".instructions").addEventListener("click", function(){
+    document.querySelector(".instructions").addEventListener("click", function () {
         document.querySelector(".modal").classList.add("show");
-        document.querySelector(".close").addEventListener("click", function(){
+        document.querySelector(".close").addEventListener("click", function () {
             document.querySelector(".modal").classList.remove("show");
         });
 
 
-});
+    });
 }
 init()
 
@@ -78,7 +78,7 @@ btn2.addEventListener('click', function () {
         //check
         if (dice !== 1) {
             currSc += dice;
-            document.getElementById(`score-${activePlayer}`).textContent = currSc
+            document.getElementById(`current-${activePlayer}`).textContent = currSc
 
         } else {
             //switch
@@ -96,7 +96,7 @@ btn3.addEventListener('click', function () {
     if (playing) {
         //add curr score to active players  score
         scores[activePlayer] += currSc;
-        document.getElementById(`current-${activePlayer}`).textContent = scores[activePlayer]
+        document.getElementById(`score-${activePlayer}`).textContent = scores[activePlayer]
 
         //check if >=100
         if (scores[activePlayer] >= 100) {
