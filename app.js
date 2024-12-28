@@ -8,14 +8,17 @@ const cur1sc = document.getElementById('current-0');
 const cur2sc = document.getElementById('current-1');
 const p1 = document.querySelector('.player-0-panel');
 const p2 = document.querySelector('.player-1-panel');
-
+let scores = [0, 0];
+let currSc = 0;
+let activePlayer = 0;
+let playing = true;
 
 
 const init = function () {
-    let playing = true;
-    const scores = [0, 0];
-    let currSc = 0;
-    let activePlayer = 0;
+     playing = true;
+     scores = [0, 0];
+     currSc = 0;
+     activePlayer = 0;
 
 
     cur1sc.textContent = '0';
@@ -30,8 +33,15 @@ const init = function () {
     p1.classList.add('active')
     p2.classList.remove('active')
 
+    document.querySelector(".instructions").addEventListener("click", function(){
+        document.querySelector(".modal").classList.add("show");
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".modal").classList.remove("show");
+        });
 
-};
+
+});
+}
 init()
 
 
@@ -47,11 +57,9 @@ function switchPlayer() {
 
 scoreSel0.textContent = '0';
 scoreSel1.textContent = '0';
-let playing = true;
+
 dispDice.classList.add('hide');
-const scores = [0, 0];
-let currSc = 0;
-let activePlayer = 0;
+
 document.querySelector('.player-current-score').textContent = '0';
 
 
