@@ -1,17 +1,39 @@
-# The-Pig-Game 🐷
-Fun 2 player game with the dice in the center 🎲 . Always this stupid random dice, right?
+# 🎲 **Dice Game** 🎲
 
-Easy-to-play game written in pure JS, but possibly this is not what you want to know about but more about the rules of the game.
+Welcome to the **Dice Game**, a simple yet fun web-based game where you can roll dice, compete with your friends, and try your luck to get the highest score! This project demonstrates how to integrate basic JavaScript functionality with HTML and CSS to create an interactive and enjoyable game.
 
-## Rules of the game
-- The game has 2 players, playing in rounds
-- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
-- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
-- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
-- The first player to reach 100 points on GLOBAL score wins the game
+## 🚀 **Features**
 
-## How can I play?
+- 🎲 **Dice Rolling**: Roll a pair of dice to get your score!
+- 🏆 **Scoreboard**: Keep track of your score in real-time as you play.
+- 🎉 **Win Condition**: The player who reaches the target score first wins!
+- 🔄 **Roll Again**: Refresh your luck with each roll and see if you can score higher.
+- ✨ **Interactive UI**: A responsive and modern design to make your gameplay fun and engaging.
 
-Oh it's simple, really, just follow [this 🐷 link](https://javpet.github.io/The-Pig-Game/), and you end up on a lovely piggy farm, where you can start the game. I enclosed a screenshot, so you don't get lost.
+## 🛠️ **Technologies Used**
 
-![screen shot 2017-07-28 at 20 37 58](https://user-images.githubusercontent.com/9334646/28731546-a533f564-73d4-11e7-88b9-2f34766c2c7a.png)
+- **HTML5**: The markup structure of the game.
+- **CSS3**: Styling for a vibrant and modern game interface.
+  - **Flexbox**: For a responsive layout that adapts to different screen sizes.
+- **JavaScript (ES6)**: The logic behind the dice roll and score tracking.
+  - **DOM Manipulation**: For rendering dice results and updating scores in real-time.
+
+## 🎮 **How to Play**
+
+1. **Start the Game**: Press the "Roll Dice" button to begin.
+2. **Roll the Dice**: Click the button again to roll the dice.
+3. **View Results**: The dice will roll, and the scores will be displayed immediately.
+4. **Keep Rolling**: Continue rolling to accumulate points.
+5. **Win**: Be the first player to reach the target score and win the game!
+
+## 📥 **Installation & Setup**
+
+### Prerequisites
+- **Web Browser** (Chrome, Firefox, Safari, etc.)
+- **Text Editor** (Visual Studio Code, Sublime Text, etc.)
+
+### Steps to Run Locally
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/NAKUL-XD/dice-game.git
